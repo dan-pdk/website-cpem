@@ -1,0 +1,1 @@
+docker exec -it website-cpem-db_1 psql -U CPEM_usr -d CPEM_db
