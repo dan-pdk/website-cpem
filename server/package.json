@@ -1,7 +1,10 @@
 {
-  "devDependencies": {
+  "type": "module",
+  "dependencies": {
     "dotenv": "^17.4.2",
-    "node-pg-migrate": "^9.0.0",
     "pg": "^8.22.0"
+  },
+  "devDependencies": {
+    "node-pg-migrate": "^9.0.0"
   }
 }
