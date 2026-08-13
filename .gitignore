@@ -17,3 +17,6 @@ Thumbs.db
 
 # Script de iniciar o DB
 start_db.sh
+
+#notas
+notes.md

@@ -1,1 +1,25 @@
 @import "tailwindcss";
+
+@font-face {
+    font-family: 'Nunito Sans';
+    src: url('assets/nunito-sans_font.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@theme {
+    --font-nunito-sans: 'Nunito Sans', sans-serif;
+
+    /* cores */
+
+    --color-primary: #013879;
+    --color-primary-dark: #002C5B;
+    --color-primary-light: #2765AF;
+
+    --color-bg-100: #E6EEF7;
+    --color-bg-200: #D3DEEB;
+
+    --color-accent: #FFC857;
+    
+    --color-font: #1E293B;
+}
