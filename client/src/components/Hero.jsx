@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import Button from './Button.jsx'
 
 function Hero() {
   return (
@@ -10,18 +10,12 @@ function Hero() {
         Um coletivo de professores construindo e compartilhando materiais, encontros e experiências pra ensinar matemática de outro jeito.
       </p>
       <div className="flex flex-col sm:flex-row gap-4 mt-4">
-        <Link
-          to="/sobre"
-          className="bg-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-primary-dark transition-colors"
-        >
+        <Button to="/sobre" variant="primary">
           Conheça o projeto
-        </Link>
-        <Link
-          to="/materiais"
-          className="border border-primary text-primary px-6 py-3 rounded-lg font-semibold hover:bg-primary hover:text-white transition-colors"
-        >
+        </Button>
+        <Button to="/materiais" variant="primary-outline">
           Ver materiais
-        </Link>
+        </Button>
       </div>
     </section>
   )
