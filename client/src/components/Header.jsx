@@ -16,7 +16,7 @@ function Header() {
  // todo: baixar imagem logo_mobile com qualidade maior
   return ( <>
     <div className='h-24 w-full'></div>
-    <header className="fixed h-24 bg-bg-200/20 w-full flex items-center justify-between border-b border-bg-200 px-4 md:px-8 backdrop-blur-md">
+    <header className="fixed h-24 bg-bg-200/20 w-full flex items-center justify-between border-b border-bg-200 px-4 md:px-8 backdrop-blur-md z-999">
       <Link to="/" className="flex items-center gap-2">
         <img src={logo_mobile} alt="Logo" className="md:hidden h-16 hover:scale-102 transform transition-duration-900" />
         <img src={logo} alt="Logo" className="hidden md:block h-16 hover:scale-102 transform transition-duration-900" />

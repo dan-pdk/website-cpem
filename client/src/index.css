@@ -23,3 +23,22 @@
     
     --color-font: #1E293B;
 }
+
+/* marquee do featured materiais*/
+
+@keyframes marquee-right {
+    from {
+        transform: translateX(-25%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+
+.materials-track {
+    animation: marquee-right 30s linear infinite;
+}
+
+.materials-track:has(.material-card-item:hover) {
+    animation-play-state: paused;
+}
