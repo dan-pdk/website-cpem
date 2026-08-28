@@ -10,7 +10,7 @@ function FeaturedMaterials() {
     <section className="py-20 flex flex-col gap-10 font-nunito-sans">
       <ScrollFadeIn>
         <div className="flex flex-col items-center text-center gap-4">
-          <h2 className="text-3xl font-bold text-primary">Materiais em destaque</h2>
+          <h2 className="text-5xl font-bold text-primary">Materiais em destaque</h2>
           <p className="text-font max-w-xl mx-auto">
             Atividades, modelos, documentos, artigos e arquivos produzidos no projeto, para o projeto.
           </p>
