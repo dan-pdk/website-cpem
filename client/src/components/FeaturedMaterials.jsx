@@ -12,13 +12,13 @@ function FeaturedMaterials() {
         <div className="flex flex-col items-center text-center gap-4">
           <h2 className="text-3xl font-bold text-primary">Materiais em destaque</h2>
           <p className="text-font max-w-xl mx-auto">
-            Atividades, slides e vídeos produzidos e compartilhados pelo coletivo.
+            Atividades, modelos, documentos, artigos e arquivos produzidos no projeto, para o projeto.
           </p>
         </div>
       </ScrollFadeIn>
 
       <div className="overflow-hidden">
-        <div className="materials-track flex w-max">
+        <div className="materials-track flex w-max py-4">
           {trackMaterials.map((material, index) => (
             <div key={`${material.id}-${index}`} className="material-card-item w-72 shrink-0 mr-6">
               <MaterialCard material={material} />
