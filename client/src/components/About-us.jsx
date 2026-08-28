@@ -18,11 +18,10 @@ function AboutUs() {
                Quero Participar →
             </Button>
         </div>
-        <div className="hidden md:block pointer-events-none overflow-hidden mask-[linear-gradient(to_left,rgba(0,0,0,1)_40%,rgba(0,0,0,0)_100%)] [-webkit-mask-image:linear-gradient(to_left,rgba(0,0,0,1)_40%,rgba(0,0,0,0)_100%)]">
-        <img src={logo} alt="Logo" className="h-full w-full object-cover opacity-20 scale-[1.8]" />
-</div>
 
-
+            <div className="hidden md:block pointer-events-none overflow-hidden mask-[linear-gradient(to_left,rgba(0,0,0,1)_40%,rgba(0,0,0,0)_100%)] [-webkit-mask-image:linear-gradient(to_left,rgba(0,0,0,1)_40%,rgba(0,0,0,0)_100%)]">
+                <ScrollFadeIn duration={4500} direction="left"><img src={logo} alt="Logo" className="h-full w-full object-cover opacity-20 scale-[1.8]" /></ScrollFadeIn>
+            </div>
     </div>
 }
 

@@ -15,7 +15,7 @@ function HowToParticipate() {
 
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
         {passos.map((passo) => (
-          <ScrollFadeIn key={passo.numero}>
+          <ScrollFadeIn key={passo.numero} delay={500} duration={1500}>
             <div className="flex flex-col gap-2">
               <span className="text-4xl font-bold text-accent">{passo.numero}</span>
               <h3 className="font-semibold text-font">{passo.titulo}</h3>
