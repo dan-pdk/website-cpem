@@ -14,7 +14,7 @@ function FeaturedMaterials() {
             Materiais em{' '}
             <span className="relative inline-block">
               <span className="relative z-10">destaque</span>
-              <span className="absolute bottom-1 left-0 right-0 h-[0.35em] bg-accent/40 rounded-sm -z-0" />
+              <span className="absolute bottom-1 left-0 right-0 h-[0.35em] bg-accent/40 rounded-sm z-0" />
             </span>
           </h2>
           <p className="text-font text-base md:text-lg max-w-xl mx-auto">

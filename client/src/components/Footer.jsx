@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import logo from '../assets/logo.png'
+import logo from '../assets/logo_wide_large_whitefont.png'
 
 function WhatsAppIcon({ className }) {
   return (
@@ -120,7 +120,6 @@ function Footer() {
       <div className="border-t border-primary-light">
         <div className="max-w-6xl mx-auto px-6 py-5 flex flex-col md:flex-row items-center justify-between gap-2 text-sm text-bg-100">
           <p>© {new Date().getFullYear()} CPEM — Coletivo de Professores que Ensinam Matemática.</p>
-          <p>Feito por professores, para professores.</p>
         </div>
       </div>
     </footer>
