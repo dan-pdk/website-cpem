@@ -52,14 +52,14 @@ function AccordeonButton({ children, isOpen, onClick, ...props }) {
     <button
       type="button"
       onClick={onClick}
-      className="w-full flex justify-between items-center p-5 text-left font-semibold text-lg text-font hover:bg-gray-50 transition-colors gap-4 cursor-pointer"
+      className="w-full flex justify-between items-center p-4 md:p-5 text-left font-semibold text-base md:text-lg text-font hover:bg-gray-50 transition-colors gap-3 cursor-pointer"
       aria-expanded={isOpen}
       {...props}
     >
       <span className="flex-1 pr-2">{children}</span>
 
       <svg
-        className={`w-5 h-5 text-primary transform transition-transform duration-300 ${
+        className={`w-5 h-5 shrink-0 text-primary transform transition-transform duration-300 ${
           isOpen ? "rotate-180" : ""
         }`}
         fill="none"
@@ -79,14 +79,18 @@ function AccordeonButton({ children, isOpen, onClick, ...props }) {
 
 function FAQ() {
   return (
-    <div className="teste w-full min-h-112 flex flex-col items-center py-20 font-nunito-sans gap-5 px-4">
+    <div className="w-full min-h-112 flex flex-col items-center py-12 md:py-20 font-nunito-sans gap-4 md:gap-5 px-4">
       <ScrollFadeIn>
-        <h1 className="text-5xl text-primary font-semibold text-center">
-          Perguntas frequentes
+        <h1 className="text-3xl sm:text-4xl md:text-5xl text-primary font-semibold text-center">
+          Perguntas{' '}
+          <span className="relative inline-block">
+            <span className="relative z-10">frequentes</span>
+            <span className="absolute bottom-1 left-0 right-0 h-[0.35em] bg-accent/40 rounded-sm -z-0" />
+          </span>
         </h1>
       </ScrollFadeIn>
-      <ScrollFadeIn delay={500}>
-        <p className="text-center text-font">
+      <ScrollFadeIn delay={200}>
+        <p className="text-center text-font text-base md:text-lg">
           Dúvidas comuns a respeito do que fazemos no projeto.
         </p>
       </ScrollFadeIn>
