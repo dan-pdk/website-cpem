@@ -68,7 +68,7 @@ function WhereToFind() {
     <div className="w-full bg-primary-light grid grid-cols-1 md:grid-cols-2 min-h-112 font-nunito-sans">
       <div className="px-6 py-10 md:px-10 md:py-12 flex flex-col items-start gap-6 md:gap-8">
         <ScrollFadeIn>
-          <h1 className="text-bg-100 text-3xl sm:text-4xl md:text-5xl font-bold">Onde estamos</h1>
+          <h2 className="text-bg-100 text-5xl font-bold">Onde estamos</h2>
         </ScrollFadeIn>
 
         <ScrollFadeIn>
@@ -84,7 +84,7 @@ function WhereToFind() {
               onClick={() => setSelected(key)}
               className={`px-5 py-2.5 rounded-lg font-semibold cursor-pointer transition-colors ${selected === key
                 ? 'bg-bg-100 text-primary-dark'
-                : 'bg-white/15 text-bg-100 hover:bg-white/20'
+                : 'bg-primary-dark text-bg-100 hover:bg-primary-dark/80'
                 }`}
             >
               {opt.label}
@@ -103,7 +103,7 @@ function WhereToFind() {
                 title={opt.label}
                 className={`p-2.5 h-11 w-11 rounded-lg flex items-center justify-center cursor-pointer transition-colors ${selected === key
                   ? 'bg-bg-100 text-primary-dark shadow-xs'
-                  : 'bg-white/15 text-bg-100 hover:bg-white/20'
+                  : 'bg-primary-dark text-bg-100 hover:bg-primary-dark/80'
                   }`}
               >
                 <TabIcon className="h-6 w-6" />
@@ -120,7 +120,7 @@ function WhereToFind() {
 
         <div key={selected} className="relative flex flex-col items-start gap-4 animate-[fade-in-left_0.4s_ease-out]">
           <Icon className="h-12 w-12 md:h-16 md:w-16 text-bg-100" />
-          <h2 className="text-xl md:text-2xl font-bold text-bg-100">{option.title}</h2>
+          <h3 className="text-xl md:text-2xl font-bold text-bg-100">{option.title}</h3>
           <p className="text-bg-100 text-sm md:text-base max-w-md">{option.text}</p>
           <Button href={option.href} variant="light" className="relative">
             {option.actionLabel}
@@ -129,9 +129,9 @@ function WhereToFind() {
 
         <div
           key={`qr-${selected}`}
-          className="mt-4 md:mt-0 md:absolute md:bottom-6 md:right-6 flex flex-col items-center gap-2 md:gap-3 animate-[fade-in-left_0.4s_ease-out] bg-white/10 md:bg-transparent p-3 md:p-0 rounded-lg backdrop-blur-xs md:backdrop-blur-none"
+          className="mt-4 md:mt-0 md:absolute md:bottom-6 md:right-6 flex flex-col items-center gap-2 md:gap-3 animate-[fade-in-left_0.4s_ease-out] bg-primary-dark md:bg-transparent p-3 md:p-0 rounded-lg"
         >
-          <span className="text-xs text-bg-100/80 font-medium">Ou escaneie o QR code</span>
+          <span className="text-xs text-bg-100 font-medium">Ou escaneie o QR code</span>
           <img
             src={`https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=${encodeURIComponent(option.href)}`}
             alt={`QR code para ${option.label}`}

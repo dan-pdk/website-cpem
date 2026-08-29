@@ -15,7 +15,7 @@ function BurgerMenu({ links, onClose }) {
               key={link.to}
               to={link.to}
               onClick={onClose}
-              className="flex items-center justify-between py-2 text-font hover:text-primary font-semibold text-lg border-b border-bg-200/60 last:border-none transition-colors"
+              className="flex items-center justify-between py-2 text-font hover:text-primary font-semibold text-lg border-b border-bg-200 last:border-none transition-colors"
             >
               <span>{link.label}</span>
               <span className="text-primary-light text-sm">→</span>

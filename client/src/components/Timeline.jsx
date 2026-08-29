@@ -6,7 +6,7 @@ function Timeline() {
     <section className="bg-bg-100 px-4 md:px-8 py-12 md:py-20 font-nunito-sans">
       <div className="max-w-6xl mx-auto flex flex-col gap-10 md:gap-14">
           <div className="flex flex-col items-center text-center gap-3 md:gap-4">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-primary">
+            <h2 className="text-5xl font-bold text-primary">
               Nossa{' '}
               <span className="relative inline-block">
                 <span className="relative z-10">trajetória</span>

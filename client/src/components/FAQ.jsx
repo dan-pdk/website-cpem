@@ -35,7 +35,7 @@ function Accordeon({ items }) {
             >
               <div className="overflow-hidden">
                 <div
-                  className="p-5 text-gray-600 leading-relaxed border-t border-gray-100 text-base"
+                  className="p-5 text-font leading-relaxed border-t border-bg-100 text-base"
                   dangerouslySetInnerHTML={{ __html: item.content }} // tuff
                 />
               </div>
@@ -52,7 +52,7 @@ function AccordeonButton({ children, isOpen, onClick, ...props }) {
     <button
       type="button"
       onClick={onClick}
-      className="w-full flex justify-between items-center p-4 md:p-5 text-left font-semibold text-base md:text-lg text-font hover:bg-gray-50 transition-colors gap-3 cursor-pointer"
+      className="w-full flex justify-between items-center p-4 md:p-5 text-left font-semibold text-base md:text-lg text-font hover:bg-bg-100 transition-colors gap-3 cursor-pointer"
       aria-expanded={isOpen}
       {...props}
     >
@@ -81,13 +81,13 @@ function FAQ() {
   return (
     <div className="w-full min-h-112 flex flex-col items-center py-12 md:py-20 font-nunito-sans gap-4 md:gap-5 px-4">
       <ScrollFadeIn>
-        <h1 className="text-3xl sm:text-4xl md:text-5xl text-primary font-semibold text-center">
+        <h2 className="text-5xl text-primary font-bold text-center">
           Perguntas{' '}
           <span className="relative inline-block">
             <span className="relative z-10">frequentes</span>
             <span className="absolute bottom-1 left-0 right-0 h-[0.35em] bg-accent/40 rounded-sm -z-0" />
           </span>
-        </h1>
+        </h2>
       </ScrollFadeIn>
       <ScrollFadeIn delay={200}>
         <p className="text-center text-font text-base md:text-lg">

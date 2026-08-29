@@ -11,8 +11,8 @@ function Home() {
     <AboutUs />
     <FeaturedMaterials />
     <WhereToFind />
-    <FAQ />
     <Timeline />
+    <FAQ />
   </div>
 }
 

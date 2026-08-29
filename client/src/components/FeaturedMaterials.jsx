@@ -10,7 +10,7 @@ function FeaturedMaterials() {
     <section className="py-12 md:py-20 flex flex-col gap-8 md:gap-10 font-nunito-sans">
       <ScrollFadeIn>
         <div className="flex flex-col items-center text-center gap-3 md:gap-4 px-4">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-primary">
+          <h2 className="text-5xl font-bold text-primary">
             Materiais em{' '}
             <span className="relative inline-block">
               <span className="relative z-10">destaque</span>

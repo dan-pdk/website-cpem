@@ -10,7 +10,7 @@ function MaterialDetalhe() {
     return (
       <section className="px-4 md:px-8 py-20 max-w-2xl mx-auto flex flex-col items-center text-center gap-6 font-nunito-sans">
         <h1 className="text-2xl font-bold text-primary">Material não encontrado</h1>
-        <p className="text-font/70">O material que você está procurando não existe ou foi removido.</p>
+        <p className="text-font">O material que você está procurando não existe ou foi removido.</p>
         <Button to="/materiais" variant="primary-outline">
           Voltar para materiais
         </Button>
@@ -33,7 +33,7 @@ function MaterialDetalhe() {
           />
           <span className="text-xs uppercase text-primary-light font-semibold">{material.tipo}</span>
           <h1 className="text-3xl font-bold text-primary">{material.titulo}</h1>
-          <div className="flex flex-wrap gap-x-6 gap-y-1 text-sm text-font/60">
+          <div className="flex flex-wrap gap-x-6 gap-y-1 text-sm text-primary-light">
             <span>Autor: {material.autor}</span>
             <span>Publicado em: {material.data}</span>
           </div>

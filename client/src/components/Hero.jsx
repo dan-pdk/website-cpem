@@ -88,12 +88,12 @@ const MATH_DECO_ELEMENTS = (() => {
 
   const hexagons = Array.from({ length: 7 }, () => {
     const { x, y } = edge()
-    return { cx: x, cy: y, r: 22 + rand() * 42, rotation: rand() * 30, opacity: 0.12 + rand() * 0.08 }
+    return { cx: x, cy: y, r: 22 + rand() * 42, rotation: rand() * 30, opacity: 0.25 + rand() * 0.08 }
   })
 
   const circles = Array.from({ length: 7 }, () => {
     const { x, y } = edge()
-    return { cx: x, cy: y, r: 18 + rand() * 48, opacity: 0.12 + rand() * 0.08 }
+    return { cx: x, cy: y, r: 18 + rand() * 48, opacity: 0.3 + rand() * 0.08 }
   })
 
   const triangles = Array.from({ length: 6 }, () => {
@@ -110,12 +110,12 @@ const MATH_DECO_ELEMENTS = (() => {
     const A = rotate(0, 0)
     const B = rotate(size, 0)
     const C = rotate(0, flip * size)
-    return { A, B, C, markerSize: size * 0.13, opacity: 0.12 + rand() * 0.08 }
+    return { A, B, C, markerSize: size * 0.13, opacity: 0.3 + rand() * 0.08 }
   })
 
   const axes = Array.from({ length: 3 }, () => {
     const { x, y } = edge()
-    return { ox: x, oy: y, len: 65 + rand() * 75, opacity: 0.12 + rand() * 0.08 }
+    return { ox: x, oy: y, len: 65 + rand() * 75, opacity: 0.3 + rand() * 0.08 }
   })
 
   const sinewaves = Array.from({ length: 3 }, () => {
@@ -127,7 +127,7 @@ const MATH_DECO_ELEMENTS = (() => {
       wavelength: 55 + rand() * 40,
       cycles: 1.5 + rand() * 1.5,
       angleDeg: rand() * 50 - 25,
-      opacity: 0.12 + rand() * 0.08,
+      opacity: 0.45  + rand() * 0.08,
     }
   }) // brutal
 

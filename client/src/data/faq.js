@@ -2,7 +2,7 @@ export const faqItems = [
     {
         id: 1,
         title: 'Preciso ser professor de matemática para participar?',
-        content: 'O Coletivo de Professores que Ensinam Matemática não é um grupo somente para profissionais dá matemática, mas para <b>todos os educadores que têm contato com a disciplina!</b> Nosso projeto engloba desde professores do <b>Ensino Fundamental</b> até o <b>Ensino Superior</b>, uma vez que o foco principal dele é a formação continuada de professores que ministram quaisquer aulas de matemática a seus alunos.'
+        content: 'O Coletivo de Professores que Ensinam Matemática não é um grupo somente para profissionais de matemática, mas para <b>todos os educadores que têm contato com a disciplina!</b> Nosso projeto engloba desde professores do <b>Ensino Fundamental</b> até o <b>Ensino Superior</b>, uma vez que o foco principal dele é a formação continuada de professores que ministram quaisquer aulas de matemática a seus alunos.'
     },
     {
         id: 2,
@@ -12,7 +12,7 @@ export const faqItems = [
     {
         id: 3,
         title: 'Quando posso participar?',
-        content: 'As inscrições são abertas todo março, e cada ciclo dura <b>um ano</b>. Fique ligado na página do Instagram e ao grupo de WhatsApp para garantir sua vaga!'
+        content: 'As inscrições são abertas todo mês de Março, e cada ciclo dura <b>um ano</b>. Fique ligado na página do Instagram e no grupo de WhatsApp para garantir sua vaga!'
     },
     {
         id: 4,

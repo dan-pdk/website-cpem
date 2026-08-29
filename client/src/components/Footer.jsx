@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import logo from '../assets/logo_wide_large.png'
+import logo from '../assets/logo.png'
 
 function WhatsAppIcon({ className }) {
   return (
@@ -27,38 +27,100 @@ function MailIcon({ className }) {
   )
 }
 
+function PinIcon({ className }) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className={className}>
+      <path strokeLinecap="round" strokeLinejoin="round" d="M12 21s7-7.58 7-12A7 7 0 0 0 5 9c0 4.42 7 12 7 12z" />
+      <circle cx="12" cy="9" r="2.5" />
+    </svg>
+  )
+}
+
+const quickLinks = [
+  { label: 'Início', to: '/' },
+  { label: 'Sobre o projeto', to: '/sobre' },
+  { label: 'Materiais', to: '/materiais' },
+  { label: 'Contato', to: '/contato' },
+]
+
+const socialLinks = [
+  {
+    label: 'WhatsApp',
+    href: 'https://chat.whatsapp.com/SEU_LINK_AQUI',
+    icon: WhatsAppIcon,
+  },
+  {
+    label: 'Instagram',
+    href: 'https://instagram.com/SEU_USUARIO_AQUI',
+    icon: InstagramIcon,
+  },
+  {
+    label: 'contato@coletivocpem.com.br',
+    href: 'mailto:contato@coletivocpem.com.br',
+    icon: MailIcon,
+  },
+]
+
 function Footer() {
   return (
-    <footer className="w-full bg-primary-dark text-bg-100 font-nunito-sans border-t border-primary-light/30">
-      <div className="max-w-6xl mx-auto px-6 py-6 md:py-8 flex flex-col md:flex-row items-center justify-between gap-4 text-sm sm:text-base text-bg-100/90 font-medium">
-        <p>© {new Date().getFullYear()} CPEM — Coletivo de Professores que Ensinam Matemática.</p>
+    <footer className="w-full bg-primary-dark text-bg-100 font-nunito-sans border-t border-primary-light">
+      <div className="max-w-6xl mx-auto px-6 py-12 md:py-16 grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-8">
+        <div className="flex flex-col gap-4">
+          <Link to="/">
+            <img src={logo} alt="Logo CPEM" className="h-12" />
+          </Link>
+          <p className="text-bg-100 text-sm leading-relaxed max-w-xs">
+            Coletivo de Professores que Ensinam Matemática: professores construindo e
+            compartilhando materiais, encontros e experiências para ensinar matemática
+            de outro jeito.
+          </p>
+          <div className="flex items-start gap-2 text-bg-100 text-sm">
+            <PinIcon className="h-5 w-5 shrink-0 mt-0.5" />
+            <span><a href="https://ifpr.edu.br" target='_blank' className='font-bold underline hover:text-accent'>IFPR Campus Assis Chateaubriand</a><br />Quinzenalmente, nas quartas-feiras, 19h–21h</span>
+          </div>
+        </div>
 
-        <div className="flex items-center gap-4">
-          <a
-            href="https://chat.whatsapp.com/SEU_LINK_AQUI"
-            target="_blank"
-            rel="noreferrer"
-            aria-label="WhatsApp"
-            className="p-2.5 rounded-full bg-white/10 text-bg-100 hover:bg-white/25 transition-all duration-200"
-          >
-            <WhatsAppIcon className="h-5 w-5" />
-          </a>
-          <a
-            href="https://instagram.com/SEU_USUARIO_AQUI"
-            target="_blank"
-            rel="noreferrer"
-            aria-label="Instagram"
-            className="p-2.5 rounded-full bg-white/10 text-bg-100 hover:bg-white/25 transition-all duration-200"
-          >
-            <InstagramIcon className="h-5 w-5" />
-          </a>
-          <a
-            href="mailto:contato@coletivocpem.com.br"
-            aria-label="E-mail"
-            className="p-2.5 rounded-full bg-white/10 text-bg-100 hover:bg-white/25 transition-all duration-200"
-          >
-            <MailIcon className="h-5 w-5" />
-          </a>
+        <div className="flex flex-col gap-4">
+          <h3 className="text-bg-100 font-bold text-lg">Links rápidos</h3>
+          <nav className="flex flex-col gap-2.5">
+            {quickLinks.map((link) => (
+              <Link
+                key={link.to}
+                to={link.to}
+                className="text-bg-100 text-sm hover:text-accent transition-colors w-fit"
+              >
+                {link.label}
+              </Link>
+            ))}
+          </nav>
+        </div>
+
+        <div className="flex flex-col gap-4">
+          <h3 className="text-bg-100 font-bold text-lg">Redes e contato</h3>
+          <div className="flex flex-col gap-3">
+            {socialLinks.map((social) => {
+              const Icon = social.icon
+              return (
+                <a
+                  key={social.label}
+                  href={social.href}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="flex items-center gap-2.5 text-bg-100 text-sm hover:text-accent transition-colors w-fit"
+                >
+                  <Icon className="h-5 w-5 shrink-0" />
+                  {social.label}
+                </a>
+              )
+            })}
+          </div>
+        </div>
+      </div>
+
+      <div className="border-t border-primary-light">
+        <div className="max-w-6xl mx-auto px-6 py-5 flex flex-col md:flex-row items-center justify-between gap-2 text-sm text-bg-100">
+          <p>© {new Date().getFullYear()} CPEM — Coletivo de Professores que Ensinam Matemática.</p>
+          <p>Feito por professores, para professores.</p>
         </div>
       </div>
     </footer>
