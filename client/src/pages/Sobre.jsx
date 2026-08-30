@@ -81,8 +81,8 @@ function Sobre() {
         <div className="max-w-5xl mx-auto flex flex-col gap-10">
           <ScrollFadeIn>
             <div className="text-center mb-4">
-              <h2 className="text-3xl font-bold text-primary">Nossos Encontros</h2>
-              <p className="text-font mt-3 text-lg">Um pouco do que vivenciamos presencialmente.</p>
+              <h2 className="text-5xl font-bold text-primary">Galeria</h2>
+              <p className="text-font mt-3 text-lg">Confira alguns momentos importantes da nossa trajetória.</p>
             </div>
           </ScrollFadeIn>
 
@@ -107,7 +107,7 @@ function Sobre() {
         </div>
       </section>
 
-      <section className="px-4 md:px-8 py-16 md:py-24 bg-primary text-bg-100 flex flex-col items-center text-center gap-8 border-t border-primary-light">
+      { /* <section className="px-4 md:px-8 py-16 md:py-24 bg-primary text-bg-100 flex flex-col items-center text-center gap-8 border-t border-primary-light">
         <ScrollFadeIn>
           <h2 className="text-3xl md:text-5xl font-bold max-w-2xl leading-tight">
             Faça parte dessa história com a gente
@@ -121,7 +121,7 @@ function Sobre() {
             Quero Participar →
           </Button>
         </ScrollFadeIn>
-      </section>
+      </section> */}
 
     </div>
   )
