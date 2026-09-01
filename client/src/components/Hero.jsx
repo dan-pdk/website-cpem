@@ -136,7 +136,7 @@ const MATH_DECO_ELEMENTS = (() => {
 
 const HeroHexAccent = memo(function HeroHexAccent() {
   return (
-    <div className="absolute right-[-120px] top-[-120px] z-0 pointer-events-none opacity-[0.07] hidden md:block">
+    <div className="absolute -right-30 -top-30 z-0 pointer-events-none opacity-[0.07] hidden md:block">
       <HexGrid width={600} height={600} viewBox="-5 -5 10 10">
         <Layout size={{ x: 4.5, y: 4.5 }} flat={false} spacing={1.01} origin={{ x: 0, y: 0 }}>
           <Hexagon q={0} r={0} s={0} style={{ fill: '#013879', stroke: 'none' }} />
@@ -244,14 +244,14 @@ const Hero = memo(function Hero() {
       <HeroHexAccent />
       <MathDecorations />
 
-      <div className="pointer-events-none absolute inset-0 z-0 [mask-image:radial-gradient(ellipse_60%_60%_at_50%_50%,transparent_40%,black_100%)] bg-bg-100/70" />
+      <div className="pointer-events-none absolute inset-0 z-0 mask-[radial-gradient(ellipse_60%_60%_at_50%_50%,transparent_40%,black_100%)] bg-bg-100/70" />
 
       <div className="relative z-10 flex flex-col items-center justify-center gap-5 text-center">
         <h1 className="max-w-3xl text-3xl sm:text-4xl font-bold text-primary md:text-6xl leading-tight sm:leading-none">
           Matemática que{' '}
           <span className="relative inline-block">
             <span className="relative z-10">conecta</span>
-            <span className="absolute bottom-1 left-0 right-0 h-[0.35em] bg-accent/40 rounded-sm -z-0" />
+            <span className="absolute bottom-1 left-0 right-0 h-[0.35em] bg-accent/40 rounded-sm z-0" />
           </span>
           {' '}professores e salas de aula
         </h1>

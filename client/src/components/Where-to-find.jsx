@@ -36,7 +36,7 @@ const options = {
     title: 'Fale com a gente no WhatsApp',
     text: 'Entre no grupo do WhatsApp do coletivo e fique por dentro dos próximos encontros, dicas, vídeos compartilhados e outras informações importantes, além de poder trocar ideias com outros professores.',
     actionLabel: 'Entrar no grupo',
-    href: 'https://chat.whatsapp.com/SEU_LINK_AQUI',
+    href: 'https://chat.whatsapp.com/LINK',
     glow: 'bg-green-400',
   },
   instagram: {
@@ -45,7 +45,7 @@ const options = {
     title: 'Siga nosso perfil no Instagram',
     text: 'Acompanhe as últimas fotos do projeto, avisos, divulgações e outros conteúdos relacionados ao nosso coletivo, ajudando ele a alcançar mais pessoas.',
     actionLabel: 'Seguir no Instagram',
-    href: 'https://instagram.com/SEU_USUARIO_AQUI',
+    href: 'https://instagram.com/LINK',
     glow: 'bg-pink-400',
   },
   presencial: {
@@ -54,7 +54,7 @@ const options = {
     title: 'Participe presencialmente',
     text: 'Nossos encontros presenciais acontecem no IFPR Campus Assis Chateaubriand, quinzenalmente, às quartas-feiras, das 19h as 21h. ',
     actionLabel: 'Formulário de inscrição',
-    href: 'https://forms.gle/SEU_FORMULARIO_AQUI',
+    href: 'https://forms.gle/LINK',
     glow: 'bg-accent',
   },
 }
@@ -129,7 +129,7 @@ function WhereToFind() {
 
         <div
           key={`qr-${selected}`}
-          className="mt-4 md:mt-0 md:absolute md:bottom-6 md:right-6 flex flex-col items-center gap-2 md:gap-3 animate-[fade-in-left_0.4s_ease-out] bg-primary-dark md:bg-transparent p-3 md:p-0 rounded-lg"
+          className="mt-4 md:mt-0 md:absolute md:bottom-6 md:right-6 hidden flex-col items-center gap-2 md:gap-3 animate-[fade-in-left_0.4s_ease-out] bg-primary-dark md:bg-transparent p-3 md:p-0 rounded-lg md:flex"
         >
           <span className="text-xs text-bg-100 font-medium">Ou escaneie o QR code</span>
           <img

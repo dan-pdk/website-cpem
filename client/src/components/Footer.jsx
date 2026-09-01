@@ -46,17 +46,17 @@ const quickLinks = [
 const socialLinks = [
   {
     label: 'WhatsApp',
-    href: 'https://chat.whatsapp.com/SEU_LINK_AQUI',
+    href: 'https://chat.whatsapp.com/link',
     icon: WhatsAppIcon,
   },
   {
     label: 'Instagram',
-    href: 'https://instagram.com/SEU_USUARIO_AQUI',
+    href: 'https://instagram.com/link',
     icon: InstagramIcon,
   },
   {
-    label: 'contato@coletivocpem.com.br',
-    href: 'mailto:contato@coletivocpem.com.br',
+    label: 'cpem.assis@gmail.com',
+    href: 'mailto:cpem.assis@gmail.com',
     icon: MailIcon,
   },
 ]
@@ -76,7 +76,7 @@ function Footer() {
           </p>
           <div className="flex items-start gap-2 text-bg-100 text-sm">
             <PinIcon className="h-5 w-5 shrink-0 mt-0.5" />
-            <span><a href="https://ifpr.edu.br" target='_blank' className='font-bold underline hover:text-accent'>IFPR Campus Assis Chateaubriand</a><br />Quinzenalmente, nas quartas-feiras, 19h–21h</span>
+            <span><a href="https://ifpr.edu.br" target='_blank' className='font-bold underline hover:text-accent'>IFPR Campus Assis Chateaubriand</a><br />Quinzenalmente, nas quartas-feiras, 19h-21h</span>
           </div>
         </div>
 
