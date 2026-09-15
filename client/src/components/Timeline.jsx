@@ -14,7 +14,7 @@ function Timeline() {
               </span>
             </h2>
             <p className="text-font text-base md:text-lg max-w-xl">
-              Alguns marcos do coletivo desde o início.
+              Alguns marcos do coletivo desde o seu início.
             </p>
           </div>
 

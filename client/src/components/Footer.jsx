@@ -70,9 +70,7 @@ function Footer() {
             <img src={logo} alt="Logo CPEM" className="h-12" />
           </Link>
           <p className="text-bg-100 text-sm leading-relaxed max-w-xs">
-            Coletivo de Professores que Ensinam Matemática: professores construindo e
-            compartilhando materiais, encontros e experiências para ensinar matemática
-            de outro jeito.
+            Coletivo de Professores que Ensinam Matemática: espaço para a (re)construção da identidade e da prática do professor que ensina matemática.
           </p>
           <div className="flex items-start gap-2 text-bg-100 text-sm">
             <PinIcon className="h-5 w-5 shrink-0 mt-0.5" />

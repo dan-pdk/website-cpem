@@ -248,18 +248,16 @@ const Hero = memo(function Hero() {
 
       <div className="relative z-10 flex flex-col items-center justify-center gap-5 text-center">
         <h1 className="max-w-3xl text-3xl sm:text-4xl font-bold text-primary md:text-6xl leading-tight sm:leading-none">
-          Matemática que{' '}
+          Coletivo de{' '}
           <span className="relative inline-block">
-            <span className="relative z-10">conecta</span>
+            <span className="relative z-10">Professores</span>
             <span className="absolute bottom-1 left-0 right-0 h-[0.35em] bg-accent/40 rounded-sm z-0" />
           </span>
-          {' '}professores e salas de aula
+          {' '}que ensinam Matemática
         </h1>
 
         <p className="max-w-2xl text-base sm:text-lg text-font">
-          Um coletivo de professores construindo e compartilhando
-          materiais, encontros e experiências pra ensinar matemática
-          de outro jeito.
+          O Coletivo é um espaço potente para a (re)construção da identidade e da prática do professor que ensina matemática.
         </p>
 
         <div className="mt-4 flex flex-col w-full sm:w-auto gap-3 sm:flex-row sm:justify-center">

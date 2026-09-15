@@ -20,7 +20,7 @@ export const timelineNodes = [
   {
     id: 4,
     data: 'Mar/2025',
-    texto: 'Fim do primeiro ciclo anual do CPEM',
+    texto: 'Início do segundo ciclo anual do CPEM',
     imagem: 'https://placehold.co/400x250/002C5B/E6EEF7?text=2025',
   },
   {

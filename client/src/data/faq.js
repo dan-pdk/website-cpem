@@ -7,7 +7,7 @@ export const faqItems = [
     {
         id: 2,
         title: 'É gratuito?',
-        content: '<b>Completamente.</b> Os participantes podem optar por gastar com produtos do projeto, como as camisetas personalizadas, porém a participação do projeto é livre de qualquer pagamento.'
+        content: '<b>Com certeza.</b>'
     },
     {
         id: 3,
