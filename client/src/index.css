@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: 'Nunito Sans';
+    src: url('assets/nunito-sans_font.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@theme {
+    --font-nunito-sans: 'Nunito Sans', sans-serif;
+
+    /* cores */
+
+    --color-primary: #013879;
+    --color-primary-dark: #002C5B;
+    --color-primary-light: #2765AF;
+
+    --color-bg-100: #E6EEF7;
+    --color-bg-200: #D3DEEB;
+
+    --color-accent: #FFC857;
+    
+    --color-font: #1E293B;
+}
+
+/* marquee do featured materiais*/
+
+@keyframes marquee-right {
+    from {
+        transform: translateX(-25%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+
+.materials-track {
+    animation: marquee-right 30s linear infinite;
+}
+
+.materials-track:has(.material-card-item:hover) {
+    animation-play-state: paused;
+}
+
+/* fade-in ao trocar de opção no Where-to-find */
+
+@keyframes fade-in-left {
+    from {
+        opacity: 0;
+        transform: translateX(24px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Padrão de papel quadriculado matemático */
+.bg-math-grid {
+    background-color: var(--color-bg-100);
+    background-image: 
+        linear-gradient(to right, rgba(1, 56, 121, 0.05) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(1, 56, 121, 0.05) 1px, transparent 1px);
+    background-size: 24px 24px;
+}
